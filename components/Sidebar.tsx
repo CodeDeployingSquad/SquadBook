@@ -6,9 +6,10 @@ import '../global.css';
 import HeaderLogo from './HeaderLogo';
 import { default as Navlink } from './Navlink';
 import SidebarTabItem from './SidebarTabItem';
-import TodoIcon from '../assets/icons/checkbox-outlined.svg';
-import NotesIcon from '../assets/icons/notes-outlined.svg';
-import SettingsIcon from '../assets/icons/setting-outlined.svg';
+import CalendarIcon from '../assets/icons/calendar.svg';
+import NotesIcon from '../assets/icons/notes.svg';
+import SettingsIcon from '../assets/icons/settings.svg';
+import TodoIcon from '../assets/icons/todos.svg';
 import XIcon from '../assets/icons/x.svg';
 
 // const LINKS = ['todos', 'notes', 'settings'];
@@ -28,9 +29,9 @@ const LINKS = [
   },
   {
     id: 3,
-    label: 'Settings',
-    route: '/settings',
-    Icon: SettingsIcon,
+    label: 'Calendar',
+    route: '/calendar',
+    Icon: CalendarIcon,
   },
 ];
 
@@ -46,12 +47,7 @@ export default function Sidebar() {
             ))}
           </View>
           <View>
-            <SidebarTabItem
-              id={4}
-              label="Follow"
-              Icon={XIcon}
-              route="https://x.com/bettercallgopal"
-            />
+            <SidebarTabItem id={4} label="Settings" Icon={SettingsIcon} route="/settings" />
           </View>
         </View>
       </View>

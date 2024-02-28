@@ -15,7 +15,11 @@ const SidebarTabItem = ({ id, label, route, Icon }) => {
             transitionTimingFunction: 'cubic-bezier(0.17, 0.17, 0, 1)',
           }}
         />
-        <Icon width={24} height={24} />
+        <Icon
+          width={24}
+          height={24}
+          className="flex transition-transform hover:scale-110 active:scale-90 active:opacity-80"
+        />
         <Text className="text-white text-lg mx-4 hidden xl:flex font-bold">{label}</Text>
       </View>
     </Link>

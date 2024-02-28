@@ -2,9 +2,9 @@ import React from 'react';
 import { View, Text } from 'react-native';
 
 import TabBarItem from './TabBarItem';
-import TodoIcon from '../assets/icons/checkbox-outlined.svg';
-import NotesIcon from '../assets/icons/notes-filled.svg';
-import SettingsIcon from '../assets/icons/setting-outlined.svg';
+import CalendarIcon from '../assets/icons/calendar.svg';
+import NotesIcon from '../assets/icons/notes.svg';
+import TodoIcon from '../assets/icons/todos.svg';
 import XIcon from '../assets/icons/x.svg';
 
 const LINKS = [
@@ -22,9 +22,9 @@ const LINKS = [
   },
   {
     id: 3,
-    label: 'Settings',
-    route: '/settings',
-    Icon: SettingsIcon,
+    label: 'Calendar',
+    route: '/calendar',
+    Icon: CalendarIcon,
   },
 ];
 
